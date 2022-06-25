@@ -24,4 +24,8 @@ public class Basket {
     private int price;
     @Column(name = "count")
     private int count;
+
+    @ManyToOne
+    @JoinColumn(name = "client_id")
+    private Client client_id;
 }
